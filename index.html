@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For my Kimmy</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <div class="flip-box">
+  <div class="flip-box-inner">
+    <div class="flip-box-front">
+      <video width="558px" height="396px" autoplay muted><source src="/thank_you_card.mp4"/>
+    </div>
+    <div class="flip-box-back">
+      <video width="558px" height="396px" autoplay muted><source src="/card_back.mp4"/>
+    </div>
+  </div>
+</div>
+<script>
+// Get the flipbox element
+var flipbox = document.querySelector(".flip-box");
+
+// Add a click event listener to the flipbox element
+flipbox.addEventListener("click", function() {
+  // Get the flipbox inner element
+  var flipboxInner = flipbox.querySelector(".flip-box-inner");
+  // Toggle the flip class on the flipbox inner element
+  flipboxInner.classList.toggle("flip");
+});
+</script>
+<audio src="/instrumental.mp3" autoplay loop></audio>
+</body>
+</html>
